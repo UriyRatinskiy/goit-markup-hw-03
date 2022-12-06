@@ -1,8 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 
 :root {
@@ -50,6 +46,12 @@ ul, h1, h2, h3, h4, h5, h6, p, a {
     margin-bottom: 0px;
     padding-left: 0px;
 }
+img {
+    display: block; 
+    max-width: 100%;  
+    height: auto;
+    margin-bottom: 0;
+}
 .page-heder {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -63,9 +65,6 @@ ul, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /* nav */
-.page-container {
-    
-}
 .nav-menu {
     display: flex;
     align-items: stretch;
@@ -79,10 +78,9 @@ ul, h1, h2, h3, h4, h5, h6, p, a {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
-    align-items: center;
     letter-spacing: 0.03em;
     text-decoration:none;
-    margin-bottom: 0px;
+
 }
 .logo-studio {
     color: var(--NAVY-BLUE);
@@ -119,7 +117,7 @@ ul, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .adres-list {
-    list-style:none;
+    
     display: flex;
     margin-left: auto;
  
@@ -138,7 +136,7 @@ ul, h1, h2, h3, h4, h5, h6, p, a {
   
 }
 .menu-adres:not(:last-child) {
-  margin-right: 40px; 
+    margin-right: 40px; 
    
 }
 
@@ -150,14 +148,14 @@ ul, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .herro-titel {
-color: var(--wait-text-color);
-font-weight: 500;
-font-size: 56px;
-line-height: 1.07;
-text-align: center;
-letter-spacing: 0.02em;
-padding: 0px;
-margin-bottom: 48px;
+    color: var(--wait-text-color);
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding: 0px;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -167,13 +165,9 @@ margin-bottom: 48px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
     border-radius: 4px;
@@ -223,13 +217,12 @@ margin-bottom: 48px;
 
 /*section2*/
 .doing-title {
-font-weight: 500;
-font-size: 36px;
-line-height: 1.11;
-text-align: center;
-text-transform: capitalize;
-
-margin-bottom: 72px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .doing-list {
     list-style: none;
@@ -240,8 +233,8 @@ margin-bottom: 72px;
 
 /*section3*/
 .team {
-     background-color: var(--CLOUD);
-     padding-bottom: 120px;
+    background-color: var(--CLOUD);
+    padding-bottom: 120px;
 }
 .team-title {
     font-weight: 500;
@@ -250,19 +243,18 @@ margin-bottom: 72px;
     text-align: center;
     text-transform: capitalize;
     padding-top: 120px;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 }
 .team-item {
-    display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     gap: 8px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list {
-    list-style: none;
     display: flex;
     justify-content: space-between;
 }
@@ -271,16 +263,20 @@ margin-bottom: 72px;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-text {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    margin-bottom: 32px;
+
 }
-.team-item >img {
-    margin-bottom: 32px ;
+
+.card-team {
+    width: 264px;
+    background-color: #FFFFFF;
+    padding: 32px 16px;
 }
 
 /* footer */
@@ -294,8 +290,8 @@ margin-bottom: 72px;
 }
 
 .footer-container {
-  padding-top: 100px;
-   padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .quote {
     color: var(--CORNFLOWER);
@@ -303,20 +299,16 @@ margin-bottom: 72px;
     line-height: 1.5;
     width: 264px;
 }
-.logo-web {
-    margin-bottom:
-}
+
 .quote {
     margin-top: 16px;
 }
 
 
-
-
-
 /* Portfolio */
+
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0;  white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 .btn-list {
-    list-style: none;
     display: flex;
     justify-content: center;
     margin-top: 94px;
@@ -324,48 +316,42 @@ margin-bottom: 72px;
 }
 
 .btn {
-background-color: #F4F4FD;
-border: 1px solid #E7E9FC;
-color: var(--IRIS);
-font-family: 'Roboto', sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
-padding: 8px 16px;
-border-radius: 4px;
+    background-color: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    color: var(--IRIS);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 8px 16px;
+    border-radius: 4px;
 }
 
 .btn-item:not(:last-child) {
-   margin-right: 24px;  
+    margin-right: 24px;  
   
 }
 
 .btn:hover,
 .btn:focus,
 .btn:active {
-background: #4D5AE5;
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
-color: var(--wait-text-color);
-font-family: 'Roboto', sans-serif;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.04em;
+    background: #4D5AE5;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: var(--wait-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.04em;
 
  }
 
-.project-card > img {
-margin-bottom: 32px;
-
-}
 
 .project-list{
     list-style: none;
@@ -375,33 +361,32 @@ margin-bottom: 32px;
 }
 .project-item {
     display: flex;
+    margin-bottom: 48px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .project-item:not(:nth-child(3n+3)){
     width: 360px;
     margin-right: 24px;
-    margin-bottom: 48px;
+
 }
 
  .project-card {
     text-decoration: none;
+ }
+
+ .card-content {
+    width: 360px;
+    padding: 32px 16px ;
  }
 .project-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2; 
     margin-bottom: 8px; 
-    margin-left: 16px;
+
 }
 .project-text {
     color: var(--SLATE);
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 32px;
-    margin-left: 16px;
-}
-.project-content {
-    color: var(--CLOUD);
-    background-color: var(--IRIS);
     font-size: 16px;
     line-height: 1.5;
 }
